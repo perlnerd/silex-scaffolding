@@ -1,0 +1,19 @@
+{% extends 'layout.twig' %}
+ 
+{% block content %}
+  <div class="starter-template">
+    <p class="lead">This is the template for the /hello route</p>
+  </div>
+  <div class="row">
+    <div class="col-md-8">
+      {{ greeting }}
+    </div>
+    <div class="col-md-8">
+        {% if name == 'Guest' %}
+            <a href="{{ path('hello', {name: 'New Guy'}) }}">Click here to Change Your Name</a>
+        {% else %}
+            <a href="{{ path('hello', {name: 'Guest'}) }}">Click here to Change Your Name</a>
+        {% endif %}
+    </div>
+  </div>
+{% endblock %}

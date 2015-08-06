@@ -1,0 +1,6 @@
+parameters:
+    yaml_parameter: prod_parameter_value 
+    yaml_array:
+        elementOne: prod_foo
+        elementTwo: prod_bar
+        elementThree: prod_baz

@@ -1,0 +1,11 @@
+{% block form_row %}
+	{% if errors|length > 0 %}
+	<div class="form-group has-error has-feedback">
+	{% else %}
+	<div class="form-group">
+	{% endif %}
+		{{- form_label(form) -}}
+        {{- form_errors(form) -}}
+        {{- form_widget(form) -}}
+	</div>
+{% endblock form_row %}

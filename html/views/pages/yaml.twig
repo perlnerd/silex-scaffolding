@@ -1,0 +1,25 @@
+{% extends 'layout.twig' %}
+
+{% block content %}
+  <div class="starter-template">
+    <h1>Yaml Params</h1>
+  </div>
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      
+      <blockquote>
+      <h4>Yaml Array Contains:</h4>
+      {% if yaml_array|length != 0 %}
+        {{ yaml_array|join(', ') }}
+      {% else %}
+        0
+      {% endif %}
+
+      </blockquote>
+      <h4>Yaml Param Contains:</h4>
+      <blockquote>
+        {{ yaml_param }}      
+      </blockquote> 
+    </div>
+  </div>
+{% endblock %}

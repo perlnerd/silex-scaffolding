@@ -1,0 +1,8 @@
+parameters:
+    yaml_parameter: dev_parameter_value 
+    yaml_array:
+        elementOne: dev_foo
+        elementTwo: dev_bar
+        elementThree: dev_baz
+
+

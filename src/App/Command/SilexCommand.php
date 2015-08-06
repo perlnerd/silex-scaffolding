@@ -16,6 +16,9 @@ class SilexCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
+        $app = $this->getSilexApplication();
+
         $output->writeln("It works!");
+        $output->writeln($app['yaml_param']);
     }
 }

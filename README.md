@@ -39,6 +39,9 @@ You could add some test data in MySql like so
 ```
 CREATE DATABASE `my_database`;
 USE `my_database`;
+CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON my_database.* TO 'username'@'%';
+FLUSH PRIVILEGES;
 CREATE TABLE `some_data` (
   `first` varchar(255) NOT NULL DEFAULT '',
   `last` varchar(255) NOT NULL DEFAULT '',

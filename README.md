@@ -24,7 +24,7 @@ These include:
 ##### http://localhost/
 - The simplest route.  Renders the application 'home' page using layout.twig
 
-http://localhost/hello/{name}
+#### http://localhost/hello/{name}
 - A basic intro to passing a variable in the route and the use of a Controller Class.  {name} is an optional word to be used to greet someone.  If you simply call /hello/ 'Guest' will be used as the default value for the greeting.
 
 ##### http://localhost/yaml

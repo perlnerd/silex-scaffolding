@@ -1,8 +1,8 @@
 Silex Skeleton
 ==============
-### ### A reusable Silex PHP micro-framework web application framework.
+### A reusable Silex PHP micro-framework web application framework.
 
-The pupose of silex-skeleton is to make it quick and easy to create a web application using the [Silex PHP micro-framework][https://github.com/silexphp/Silex]
+The pupose of silex-skeleton is to make it quick and easy to create a web application using the [Silex PHP micro-framework]https://github.com/silexphp/Silex
 
 | The skeleton also includes support and example code for creating console commands using Silex. 
 
@@ -50,11 +50,11 @@ INSERT INTO `some_data` values('dave','davis'),('Don','Donegan'),('Wally','Walte
 TWIG Templates
 --------------
 
-The twig templates use the [Bootstrap][http://getbootstrap.com] HTML, CSS, JS framework.
+The twig templates use the [Bootstrap]http://getbootstrap.com HTML, CSS, JS framework.
 
 The basic layout of all pages is defined in views/layout.twig
 
-The layout is based on the source code of [this Tutorial][http://return-true.com/creating-simple-website-using-sensiolabs-symfony-silex-twig/]
+The layout is based on the source code of [this Tutorial]http://return-true.com/creating-simple-website-using-sensiolabs-symfony-silex-twig/
 
 
 

@@ -17,7 +17,7 @@ Installation
 Usage
 -----
 
-Some basic routes have been configured to provide a basic idea of how to use Silex.
+Some basic routes have been configured to provide an introduction to how to use Silex.
 
 These include:
 

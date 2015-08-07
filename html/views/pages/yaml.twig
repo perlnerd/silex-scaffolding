@@ -6,9 +6,8 @@
   </div>
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
-      
-      <blockquote>
       <h4>Yaml Array Contains:</h4>
+      <blockquote>
       {% if yaml_array|length != 0 %}
         {{ yaml_array|join(', ') }}
       {% else %}

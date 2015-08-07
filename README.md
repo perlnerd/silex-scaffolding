@@ -21,16 +21,16 @@ Some basic routes have been configured to provide a basic idea of how to use Sil
 
 These include:
 
-http://localhost/
+##### http://localhost/
 - The simplest route.  Renders the application 'home' page using layout.twig
 
 http://localhost/hello/{name}
 - A basic intro to passing a variable in the route and the use of a Controller Class.  {name} is an optional word to be used to greet someone.  If you simply call /hello/ 'Guest' will be used as the default value for the greeting.
 
-http://localhost/yaml
+##### http://localhost/yaml
 - A route that shows you how to pass a parameter set in a Yaml config file, and stored in $app to a Twig Template.
 
-http://localhost/database
+##### http://localhost/database
 - A route to show the usage of the Doctrine Service Provider, and Doctrine dbal to query a database and display the results.
 - This assumes you have a MySQL server and a database access configured in the DoctrinServiceProvider declaration in app/bootstrap.php
 

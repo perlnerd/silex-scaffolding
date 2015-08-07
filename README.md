@@ -32,7 +32,7 @@ These include:
 
 ##### http://localhost/database
 - A route to show the usage of the Doctrine Service Provider, and Doctrine dbal to query a database and display the results.
-- This assumes you have a MySQL server and a database access configured in the DoctrinServiceProvider declaration in app/bootstrap.php
+- This assumes you have a MySQL server and database access configured in the DoctrineServiceProvider declaration in app/bootstrap.php
 
 You could add some test data in MySql like so
 

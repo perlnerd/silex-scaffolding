@@ -12,6 +12,10 @@ Installation
 ### Clone the git repo
 - From the command line, or your favorite Git Application, clone this repo to your desired location. `git clone https://github.com/perlnerd/silex-skeleton.git`.
 
+@see http://getcomposer.org for composer details.
+
+Clone this project and then just run `composer update` to fetch the dependencies.
+
 *Note:* The silex-skeleton/html directory is expected to be configured as your web root.  A sample nginx config is included in silex-skeleton/nginx/silex-skeleton.nginx
 
 Usage
@@ -23,6 +27,27 @@ These include:
 
 ##### http://localhost/
 - The simplest route.  Renders the application 'home' page using layout.twig
+
+- Diplays a login form if the visitor is not logged in.
+
+- To try user authentication you can run the following in your database to add a user `admin` with the password `admin`:
+
+```
+CREATE DATABASE `my_database`;
+USE `my_database`;
+CREATE TABLE `users` (
+  `id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `username` VARCHAR(100) NOT NULL DEFAULT '',
+  `password` VARCHAR(255) NOT NULL DEFAULT '',
+  `roles` VARCHAR(255) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `unique_username` (`username`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO `users` (`username`, `password`, `roles`) VALUES ('admin', 'nhDr7OyKlXQju+Ge/WKGrPQ9lPBSUFfpK+B1xqx/+8zLZqRNX0+5G1zBQklXUFy86lCpkAofsExlXiorUcKSNQ==', 'ROLE_USER');
+```
+##### http://localhost/encode/{password}
+- This simple route displays an encoded version of `password` from the route.  Useful when adding more users to your application.
 
 ##### http://localhost/hello/{name}
 - A basic intro to passing a variable in the route and the use of a Controller Class.  {name} is an optional word to be used to greet someone.  If you simply call /hello/ 'Guest' will be used as the default value for the greeting.

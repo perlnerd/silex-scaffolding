@@ -55,6 +55,22 @@ $app->register(new TranslationServiceProvider(), array(
 $app->register(new FormServiceProvider());
 $app->register(new SecurityServiceProvider(), array(
     'security.firewalls' => array(
+        'database' => array(
+        'pattern' => '^/database$',
+        'security' => false,
+        ),
+        'yaml' => array(
+        'pattern' => '^/yaml$',
+        'security' => false,
+        ),
+        'hello' => array(
+        'pattern' => '^/hello.*',
+        'security' => false,
+        ),
+        'encode' => array(
+        'pattern' => '^/database$',
+        'security' => false,
+        ),
         'default' => array(
             'pattern' => '^.*$',
             'anonymous' => true, // Needed as the login path is under the secured area

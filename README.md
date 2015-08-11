@@ -1,22 +1,22 @@
-Silex Skeleton
+Silex scaffolding
 ==============
-### A reusable Silex PHP micro-framework web application framework.
+### A reusable introduction to web applications using the Silex PHP micro-framework.
 
-The pupose of silex-skeleton is to make it quick and easy to create a web application using the [Silex PHP micro-framework](https://github.com/silexphp/Silex)
+The pupose of silex-scaffolding is to make it quick and easy to create a web application using the [Silex PHP micro-framework](https://github.com/silexphp/Silex)
 
-The skeleton also includes support and example code for creating console commands using Silex. 
+The scaffolding also includes support and example code for creating console commands using Silex. 
 
 Installation
 ------------
 
 ### Clone the git repo
-- From the command line, or your favorite Git Application, clone this repo to your desired location. `git clone https://github.com/perlnerd/silex-skeleton.git`.
+- From the command line, or your favorite Git Application, clone this repo to your desired location. `git clone https://github.com/perlnerd/silex-scaffolding.git`.
 
 @see http://getcomposer.org for composer details.
 
 Clone this project and then just run `composer update` to fetch the dependencies.
 
-*Note:* The silex-skeleton/html directory is expected to be configured as your web root.  A sample nginx config is included in silex-skeleton/nginx/silex-skeleton.nginx
+*Note:* The silex-scaffolding/html directory is expected to be configured as your web root.  A sample nginx config is included in silex-scaffolding/nginx/silex-scaffolding.nginx
 
 Usage
 -----

@@ -1,0 +1,27 @@
+server {
+        listen   80; ## listen for ipv4; this line is default and implied
+        #listen   [::]:80 default ipv6only=on; ## listen for ipv6
+
+        index index.php;
+
+        server_name localhost;
+        root /path/to/silex-scaffolding/html;
+
+        #all other locations try other files first and go to our front
+        #controller if none of them exists
+        location / {
+                if (-f $request_filename) {
+                        break;
+                }
+
+                rewrite ^(.*) /index.php last;
+        }
+
+        location ~ index\.php$ {
+                fastcgi_pass unix:/var/run/php5-fpm.sock;
+                fastcgi_index index.php;
+                fastcgi_param APP_ENV dev;
+                fastcgi_param SCRIPT_FILENAME $document_root/index.php;
+                include fastcgi_params;
+        }
+}
